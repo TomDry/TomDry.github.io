@@ -8,21 +8,20 @@
 body {
   font-family: "Garamond", sans-serif;
 }
-/* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
   top: 0;
   left: 0;
   background-color: darkseagreen;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s; 
 }
 
-/* The navigation menu links */
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -32,12 +31,11 @@ body {
   transition: 0.5s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: black;
 }
 
-/* Position and style the close button (top right corner) */
+
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -46,13 +44,13 @@ body {
   margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
 #main {
   transition: margin-left 0.5s;
   padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -106,12 +104,12 @@ body {
 
 .topnav .search-container {
   float: right;
-}
-
+}   
+    
 .topnav input[type=text] {
   padding: 6px;
   margin-top: 8px;
-  font-size: 17px;
+  font-size: 18px;
   border: none;
 }
 
@@ -132,10 +130,10 @@ body {
 
 @media screen and (max-width: 600px) {
   .topnav .search-container {
-    float: none;
+    float: right;
   }
   .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
+    float: right;
     display: block;
     text-align: left;
     width: 100%;
@@ -150,8 +148,8 @@ body {
 <body>
 
 <div class="topnav">
-  
-  <div class="search-container">
+  <h>Home</h>
+    <div class="search-container"> 
     <form action="/action_page.php">
       <input type="text" placeholder="Search..." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
@@ -175,14 +173,14 @@ body {font-family: Garamond, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-/* Slideshow container */
+
 .slideshow-container {
-  max-width: fill;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -197,19 +195,17 @@ img {vertical-align: middle;}
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: darkseagreen;
 }
 
-/* Caption text */
+
 .text {
   color: black;
   background-color: darkseagreen;
@@ -221,7 +217,7 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -230,7 +226,7 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -246,7 +242,7 @@ img {vertical-align: middle;}
   background-color: darkseagreen;
 }
 
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -264,7 +260,7 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
@@ -347,9 +343,5 @@ function closeNav() {
 }
 </script>
     </div>
-    <section></section>
-    <topnav>
-    <h1>hello</h1>
-    </topnav>
     </body>
 </html>
